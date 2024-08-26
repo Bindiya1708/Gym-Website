@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title> 
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url(4.jpg);/*to add picture in background of body use url*/
+        height: 1100px;
+        font-family: Baloo Bhai,cursive;
+        color: aliceblue;
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid white; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img{
+        height: 55px;
+        width: 90px;
+        image-resolution: 15px 10px;
+        /* filter: invert();invert color of image */
+    }
+    .left div{
+        text-align: left;
+        line-height: 15px;
+    }
+
+    .mid{
+        display: block;
+        width: 45%;
+        margin: 12px auto;
+        /* border: 2px solid yellow; */
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        position: fixed;
+        /* border: 2px solid red; */
+
+    }
+    .btn{
+        margin: 10px 5px;
+        background-color: black;
+        color: aliceblue;
+        padding: 5px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: Baloo Bhai,cursive;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .navbar{
+        display: inline-block;
+        font-size: 23px;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-weight: Bold;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        color: grey;
+        text-decoration: underline;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 150px 50px;
+        padding: 20px 15px ;
+        border-radius: 14px;
+        height: 270px;
+        width: 500px;
+        font-size: 20px;
+
+    }
+    .container h1{
+        text-align: center;
+        font-size: 24px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 23px;
+        border-radius: 8px;
+        font-family: Baloo Bhai,cursive;
+
+    }
+    .container button{
+        display: block;
+        margin:10px auto;
+        width: 450px;
+
+    }
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>Fitness with Raj</div>
+          
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Fitness</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Haryana now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Enter your number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
